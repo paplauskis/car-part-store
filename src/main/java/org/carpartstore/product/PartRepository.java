@@ -1,4 +1,4 @@
-package org.carpartstore.part;
+package org.carpartstore.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
