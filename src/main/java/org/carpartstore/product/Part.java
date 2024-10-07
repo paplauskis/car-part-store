@@ -1,4 +1,4 @@
-package org.carpartstore.part;
+package org.carpartstore.product;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "part")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Part {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
